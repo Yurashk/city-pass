@@ -1,0 +1,41 @@
+<div class="container mt-3">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+      <img src="assets/logo.png" class="img-fluid"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h2>
+        <span class="text-danger">PCR </span><span class="text-primary">COVID-19 </span> test Validation
+      </h2>
+    </div>
+    <div class="col-12 px-3 text-success mt-2">
+      Order ID {{currentUser.orderId}} is Found
+    </div>
+    <div class="col-12 px-3 mt-2">
+      <span><b>Order No.</b> {{currentUser.orderId}}</span>
+    </div>
+    <div class="col-12 px-3 mt-2">
+      <span><b>Collection time:</b> {{currentDate}} 12:00</span>
+    </div>
+    <div class="col-12 px-3 mt-2">
+      <span><b>Result time:</b> {{currentDate}} 21:05</span>
+    </div>
+    <div class="col-12 px-3 mt-2">
+      <span><b>Patient: </b> {{currentUser.name}}</span>
+    </div>
+    <div class="col-12 px-3 mt-2">
+      <span><b>Date of birth:</b> {{currentUser.birthday}}</span>
+    </div>
+    <div class="col-12 px-3 mt-2">
+      <span><b>Result:</b> NEGATIVE</span>
+    </div>
+    <div class="col-12 px-3 mt-5">
+      <button class="btn w-100 btn-outline-primary" (click)="generatePdf('open') ">
+        Generate PDF
+      </button>
+    </div>
+  </div>
+</div>
+
